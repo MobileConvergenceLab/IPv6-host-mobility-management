@@ -8,4 +8,3 @@ Development Module
   - PMIPv6 based Mobility Control Application on Controller
   - PMIPv6 BCE(Binding Cache Entry) VNF on OPNFV
   
-

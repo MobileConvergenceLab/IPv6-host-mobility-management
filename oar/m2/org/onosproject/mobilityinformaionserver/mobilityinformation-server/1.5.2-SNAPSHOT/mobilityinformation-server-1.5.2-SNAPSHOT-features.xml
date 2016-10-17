@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <!--
   ~ Copyright 2015 Open Networking Laboratory
   ~
@@ -14,9 +14,10 @@
   ~ See the License for the specific language governing permissions and
   ~ limitations under the License.
   -->
-<app name="org.onosproject.mobilityinformaionserver" origin="Networking Lab, SKKU" version="1.5.2-SNAPSHOT"
-        featuresRepo="mvn:org.onosproject.mobilityinformaionserver/mobilityinformation-server/1.5.2-SNAPSHOT/xml/features"
-        features="mobilityinformation-server" apps="">
-    <description>ONOS OSGi bundle archetype</description>
-    <artifact>mvn:org.onosproject.mobilityinformaionserver/mobilityinformation-server/1.5.2-SNAPSHOT</artifact>
-</app>
+<features xmlns="http://karaf.apache.org/xmlns/features/v1.2.0" name="mobilityinformation-server-1.5.2-SNAPSHOT">
+    <feature name="mobilityinformation-server" version="1.5.2-SNAPSHOT"
+             description="ONOS OSGi bundle archetype">
+        <feature>onos-api</feature>
+        <bundle>mvn:org.onosproject.mobilityinformaionserver/mobilityinformation-server/1.5.2-SNAPSHOT</bundle>
+    </feature>
+</features>
